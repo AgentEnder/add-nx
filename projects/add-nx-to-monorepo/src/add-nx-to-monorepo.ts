@@ -283,7 +283,7 @@ function addDepsToPackageJson(repoRoot: string, useCloud: boolean) {
   if (!json.devDependencies) json.devDependencies = {};
   json.devDependencies['@nrwl/workspace'] = 'latest';
   json.devDependencies['@nrwl/cli'] = 'latest';
-  json.devDependencies['@nrwl/tao'] = 'latest';
+  json.devDependencies['nx'] = 'latest';
   if (
     !(json.dependencies && json.dependencies['typescript']) &&
     !json.devDependencies['typescript']
